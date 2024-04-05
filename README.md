@@ -2,9 +2,7 @@
 
 ## Description:
 
-This application will handle the searching and uploading of images, providing the user with an intuitive GUI for both functions. The search page will display the images in the dataset 
-
-On the upload page, the user can provide their image to be added to the dataset. The user will have to specify a name for the entry along with any relevant tags. At this point, the user can also choose to provide a description of their image. Clicking the upload button will add the entry to the dataset.
+This application will handle the searching and uploading of images, providing the user with an intuitive GUI for both functions. The search page will display the images in the dataset in the order they were added by default. Searches can be refined by typing dates or setting categorically appropriate tags. The user can click on the search results to see more detailed information about the image that can be edited. The user can also upload their images to the dataset by setting categories, descriptions, tags, etc.
 
 ## GUI mockup
 ![this is the GUI image](Imgage/PlantClasificationAppGUI.jpg)
