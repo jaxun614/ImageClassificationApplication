@@ -14,5 +14,5 @@ detailed information about the image that can be edited. The user can also uploa
 
 
 ## GUI mockup
-![This is the GUI image](Images/ImageClassificationApplicationGUI1.jpg)
+![This is the GUI image](Images/ImageClassificationApplicationGUIsearch.jpg)
 ![This is the GUI image](Images/ImageClassificationApplicationGUI2.png)
