@@ -14,4 +14,5 @@ detailed information about the image that can be edited. The user can also uploa
 
 
 ## GUI mockup
-![this is the GUI image](Imgage/PlantClasificationAppGUI.jpg)
+![This is the GUI image](Images/ImageClassificationApplicationGUI1.jpg)
+![This is the GUI image](Images/ImageClassificationApplicationGUI2.jpg)
