@@ -29,7 +29,7 @@ detailed information about the image that can be edited. The user can also uploa
 * Created the GitHub repo for this project
 * Finished the project proposal
 * Made mock-up GUI images
-* 
+* Finishing up the CRC cards
 ### Week 2:
 ### Week 3:
 ### Week 4:
