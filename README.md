@@ -7,6 +7,9 @@ This application will provide the user with an intuitive easy-to-use GUI or “G
 ![This is the GUI image](Images/ImageClassificationApplicationGUIsearch.jpg)
 ![This is the GUI image](Images/ImageClassificationApplicationGUIupload.jpg)
 
+## CRC cards
+![This is the CRC cards image](Images/CICS191UMLFinalProject.png)
+
 ## Objectives:
 * Develop an intuitive GUI with an easy-to-use experience.
 * Ensure support for multiple users, with data security between them.
