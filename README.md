@@ -33,6 +33,9 @@ This application will provide the user with an intuitive easy-to-use GUI or “G
 * Made mock-up GUI images
 * Finishing up the CRC cards
 ### Week 2:
+* Created CRC cards
+* Started writing classes in Eclipse
+* 
 ### Week 3:
 ### Week 4:
 ### Week 5:
