@@ -1,7 +1,7 @@
 # Image Classification Application
 
 ## Description:
-This application will provide the user with an intuitive easy-to-use GUI or “Gallary”. The gallery will display the user’s images. These images can be scrolled through and more detailed information is available if clicked upon. Some of the information will be editable by the user (Description, Favorite, Category tags, etc.). Searches can be performed by setting date(s) or categorically appropriate tags (Art, Baseball, Car, Friends, Family, Food, etc.). The user will also be able to upload images to the gallery, some of the non-editable information will be set during the upload (Timestamp, Private (password protected)).
+This application will provide the user with an intuitive easy-to-use GUI or “Gallery”. The gallery will display the user’s images. These images can be scrolled through and more detailed information is available if clicked upon. Some of the information will be editable by the user (Description, Favorite, Category tags, etc.). Searches can be performed by setting date(s) or categorically appropriate tags (Art, Baseball, Car, Friends, Family, Food, etc.). The user will also be able to upload images to the gallery, some of the non-editable information will be set during the upload (Timestamp, Private (password protected)).
 
 ## GUI mock-up
 ![This is the GUI image](Images/ImageClassificationApplicationGUIsearch.jpg)
