@@ -16,11 +16,13 @@ public class GalleryView extends JFrame
 	JFrame galleryWindow;
 	JPanel galleryPanel;
 	JPanel searchUploadPanel;
+	JPanel informationPanel;
 	JButton searchButton;
 	JButton uploadButton;
 	JButton imageButton;
-
 	
+
+	JLabel informationLabel;
 	JLabel searchUploadLabel;
 
 	
@@ -51,17 +53,17 @@ public class GalleryView extends JFrame
 		
 		// Create the panel to hold the searching and uploading features
 		searchUploadPanel = new JPanel();
-
-		
 		searchUploadLabel = new JLabel("Search/Upload");
-
-		
 		searchUploadPanel.add(searchUploadLabel);
-
+		
 		galleryWindow.add(searchUploadPanel, BorderLayout.WEST);
-
 		
+		// Create the Information panel
+		informationPanel = new JPanel();
+		informationLabel = new JLabel("Information");
+		informationPanel.add(informationLabel);
 		
+		galleryWindow.add(informationPanel, BorderLayout.EAST);		
 		
 		galleryWindow.setVisible(true);
 	}
