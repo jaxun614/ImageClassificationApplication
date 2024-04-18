@@ -12,9 +12,11 @@ import javax.swing.JPanel;
 public class GalleryView extends JFrame
 {
 	int galleryPanelDimeintion = 6;
+	int frameSize = 600;
 	
 	JFrame galleryWindow;
 	JPanel galleryPanel;
+	JPanel utilityPanel;
 	JPanel searchUploadPanel;
 	JPanel informationPanel;
 	JButton searchButton;
@@ -23,14 +25,14 @@ public class GalleryView extends JFrame
 	
 
 	JLabel informationLabel;
-	JLabel searchUploadLabel;
+	JLabel utilityLabel;
 
 	
 	public GalleryView()
 	{
 		// Create the Gallery window. This window is where all the other elements will be added.
 		galleryWindow = new JFrame("Gallery");
-		galleryWindow.setSize(400, 400);
+		galleryWindow.setSize(frameSize, frameSize);
 		galleryWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		galleryWindow.setLayout(new BorderLayout());
 		
@@ -52,11 +54,23 @@ public class GalleryView extends JFrame
 		}
 		
 		// Create the panel to hold the searching and uploading features
-		searchUploadPanel = new JPanel();
-		searchUploadLabel = new JLabel("Search/Upload");
-		searchUploadPanel.add(searchUploadLabel);
+		utilityPanel = new JPanel(); // Utility panel to store the searching and uploading features
+		utilityLabel = new JLabel("Utility"); // label for the new panel
+		utilityPanel.setLayout(new BoxLayout(utilityPanel, BoxLayout.Y_AXIS)); // setting the layout of the panel
+		utilityPanel.add(utilityLabel); // adding the label to the panel
 		
-		galleryWindow.add(searchUploadPanel, BorderLayout.WEST);
+		searchUploadPanel = new JPanel();
+		searchUploadPanel.setLayout(new BoxLayout(searchUploadPanel, BoxLayout.X_AXIS));
+		searchButton = new JButton("Search");
+		uploadButton = new JButton("Upload");
+		searchUploadPanel.add(searchButton);
+		searchUploadPanel.add(uploadButton);
+		
+		utilityPanel.add(searchUploadPanel);
+		
+		
+		
+		galleryWindow.add(utilityPanel, BorderLayout.WEST);
 		
 		// Create the Information panel
 		informationPanel = new JPanel();
