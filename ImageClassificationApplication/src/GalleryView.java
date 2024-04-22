@@ -86,4 +86,10 @@ public class GalleryView extends JFrame
 	{
 		new GalleryView();
 	}
+
+	public String getWindowName()
+	{
+		String windowName = galleryWindow.getTitle();
+		return windowName;
+	}
 }
