@@ -35,8 +35,9 @@ This application will provide the user with an intuitive easy-to-use GUI or “G
 ### Week 2:
 * Created CRC cards
 * Started writing classes in Eclipse
-* 
 ### Week 3:
+* Added to the program code base
+* Wrote JUnit tests for the application
 ### Week 4:
 ### Week 5:
 ### Week 6:
