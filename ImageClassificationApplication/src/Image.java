@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class Image 
 {
-	
 	String imgName;
 	// TODO: will read the dateTime like the file I/O module 
 	private String timeAdded;
@@ -47,6 +46,11 @@ public class Image
 	public ImageInformation getImgInformation()
 	{
 		return this.information;
+	}
+	
+	public void setImgInformation(ImageInformation imgInfo)
+	{
+		this.information = imgInfo;
 	}
 
 	

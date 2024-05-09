@@ -1,5 +1,7 @@
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
+import java.util.ArrayList;
+
 import javax.swing.JTextField;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
@@ -8,6 +10,8 @@ import javax.swing.JPanel;
 
 public class GalleryView extends JFrame 
 {
+	Image image;
+	ImageInformation info;
 	// 
 	JFrame mainWindow;
 	JPanel searchUploadPanel;
@@ -78,6 +82,31 @@ public class GalleryView extends JFrame
 	}
 	
 	public static void main(String[] args) {
+		
+		ArrayList<String> tags = new ArrayList<String>();
+		
+		
+		ImageInformation info = new ImageInformation("This is an image", true, tags);
+		
+		info.addTag("food");
+		info.addTag("sports");
+		
+		Image image = new Image("jackson", "2024", info);
+		String timeAdded = image.getTimeAdded();
+		String name = image.getImgName();
+		
+		
+		image.setImgInformation(info);
+		
+		//String description = image.getImgInformation().getDescription();
+		
+		System.out.println("Img name: "+name+", Time added:"+timeAdded+", Description: "+image.getImgInformation().getDescription()+", Is Favorate: "+image.getImgInformation().getIsFavorate()+", Tags"+image.getImgInformation().getTags());
+		//System.out.println(timeAdded);
+		//System.out.println(description);
+		
+
+
+		
 		new GalleryView();
 
 	}

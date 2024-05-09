@@ -43,6 +43,11 @@ public class ImageInformation
 		this.isFavorate = isFavorate;
 	}
 	
+	public ArrayList<String> getTags()
+	{
+		return this.tags;
+	}
+	
 	public void addTag(String tagName)
 	{
 		tags.add(tagName);
