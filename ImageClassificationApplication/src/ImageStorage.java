@@ -40,24 +40,12 @@
 //
 //}
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ImageStorage {
-    private List<Image> images;
-
-    public ImageStorage() {
-        this.images = new ArrayList<>();
-    }
-
-    public void uploadImage(Image image) {
-        images.add(image);
-    }
-
-    public List<Image> getAllImages() {
-        return images;
-    }
-
-    // Methods for managing image metadata and deletion can be added here
+public class ImageStorage 
+{
+    
 }
 

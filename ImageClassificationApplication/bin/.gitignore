@@ -1,6 +1,3 @@
-/Information.class
-/ImageSearchEngine.class
-/Database.class
-/ImageStorage.class
-/Image.class
-/User.class
+/GalleryView.class
+/ImageButton.class
+/ImageInformation.class
