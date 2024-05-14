@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 
+
 public class ImageInformation
 {
-	String description;
+	String description = "Default text.";
 	Boolean isFavorate;
 	ArrayList<String> tags;
 	

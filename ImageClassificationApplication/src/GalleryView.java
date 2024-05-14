@@ -14,7 +14,8 @@ public class GalleryView extends JFrame
 	ImageInformation info;
 	// 
 	JFrame mainWindow;
-	JPanel searchUploadPanel;
+	JPanel functionPanel;
+	
 	JPanel imagePanel;
 	JPanel infoPanel;
 	JTextField descriptionField;
@@ -40,12 +41,13 @@ public class GalleryView extends JFrame
 			for(int j = 0; j < 3; j++)
 			{
 				// TODO: set the background of the button to the image
-				// TODO: connect the image information to the
+				
 				
 				String coords = i+", "+j;
-				JButton button = new JButton();
-				button.setText(coords);
-				imagePanel.add(button);
+				ImageButton imageButton = new ImageButton(image);
+				imageButton.addActionListener(new ImageButtonListener(this, imageButton));
+				imageButton.setText("");
+				imagePanel.add(imageButton);
 
 			}
 		}
@@ -53,8 +55,12 @@ public class GalleryView extends JFrame
 		
 		
 		// Initialized the panel for Searching and Uploading
-		searchUploadPanel = new JPanel();
-		searchUploadPanel.setLayout(new BoxLayout(searchUploadPanel, BoxLayout.Y_AXIS));
+		functionPanel = new JPanel();
+		functionPanel.setLayout(new BoxLayout(functionPanel, BoxLayout.Y_AXIS));
+		// Initialize the search and upload buttons
+		search = new JButton("search");
+		upload = new JButton("upload");
+		upload.addActionListener(new UploadButtonListener());
 		
 		// Initialize the panel for information
 		infoPanel = new JPanel();
@@ -63,16 +69,14 @@ public class GalleryView extends JFrame
 		infoPanel.add(descriptionField);
 		
 		
-		// Initialize the search and upload buttons
-		search = new JButton("search");
-		upload = new JButton("upload");
+
 		
-		searchUploadPanel.add(search);
-		searchUploadPanel.add(upload);
+		functionPanel.add(search);
+		functionPanel.add(upload);
 		
 		// Configure the layout of the components
 		mainWindow.setLayout(new BorderLayout());
-		mainWindow.add(searchUploadPanel, BorderLayout.WEST);
+		mainWindow.add(functionPanel, BorderLayout.WEST);
 		mainWindow.add(imagePanel, BorderLayout.CENTER);
 		mainWindow.add(infoPanel, BorderLayout.EAST);
 		
@@ -90,6 +94,7 @@ public class GalleryView extends JFrame
 		
 		info.addTag("food");
 		info.addTag("sports");
+		info.setDescription("this is a new image");
 		
 		Image image = new Image("jackson", "2024", info);
 		String timeAdded = image.getTimeAdded();
@@ -97,6 +102,7 @@ public class GalleryView extends JFrame
 		
 		
 		image.setImgInformation(info);
+		
 		
 		//String description = image.getImgInformation().getDescription();
 		
@@ -109,6 +115,13 @@ public class GalleryView extends JFrame
 		
 		new GalleryView();
 
+	}
+
+	public void updateUI(GalleryView view)
+	{
+		
+		descriptionField.setText(image.getImgInformation().getDescription());
+		
 	}
 
 }
