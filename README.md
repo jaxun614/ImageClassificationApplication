@@ -9,7 +9,8 @@
 
 [Objectives](#objectives)
 
-[]
+[Features](#features)
+
 ## Description:
 This application will provide the user with an intuitive easy-to-use GUI or “Gallery”. The gallery will display the user’s images. These images can be scrolled through and more detailed information is available if clicked upon. Some of the information will be editable by the user (Description, Favorite, Category tags, etc.). Searches can be performed by setting date(s) or categorically appropriate tags (Art, Baseball, Car, Friends, Family, Food, etc.). The user will also be able to upload images to the gallery, some of the non-editable information will be set during the upload (Timestamp, Private (password protected)).
 
@@ -34,22 +35,3 @@ This application will provide the user with an intuitive easy-to-use GUI or “G
 * The uploading of images to the user account or the public image set.
 * Customizable search parameters.
 * Entries will be editable by the user.
-
-## Weekly updates
-
-### Week 1:
-* Created the GitHub repo for this project
-* Finished the project proposal
-* Made mock-up GUI images
-* Finishing up the CRC cards
-### Week 2:
-* Created CRC cards
-* Started writing classes in Eclipse
-### Week 3:
-* Added to the program code base
-* Wrote JUnit tests for the application
-### Week 4:
-### Week 5:
-### Week 6:
-### Week 7:
-### Week 8:
