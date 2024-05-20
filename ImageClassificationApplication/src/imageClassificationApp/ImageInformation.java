@@ -1,4 +1,4 @@
-package ImageClassificationApp;
+package imageClassificationApp;
 import java.util.ArrayList;
 
 

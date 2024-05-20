@@ -38,6 +38,6 @@
 //    }
 //}
 //
-package ImageClassificationApp;
+package imageClassificationApp;
 
 

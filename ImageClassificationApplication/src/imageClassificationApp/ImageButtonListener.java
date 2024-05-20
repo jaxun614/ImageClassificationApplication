@@ -1,4 +1,4 @@
-package ImageClassificationApp;
+package imageClassificationApp;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 

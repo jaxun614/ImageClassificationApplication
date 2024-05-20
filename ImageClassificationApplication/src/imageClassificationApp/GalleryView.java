@@ -1,4 +1,4 @@
-package ImageClassificationApp;
+package imageClassificationApp;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;

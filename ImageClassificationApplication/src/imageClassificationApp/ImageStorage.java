@@ -39,7 +39,7 @@
 //	}
 //
 //}
-package ImageClassificationApp;
+package imageClassificationApp;
 
 import java.io.File;
 import java.io.FileNotFoundException;
