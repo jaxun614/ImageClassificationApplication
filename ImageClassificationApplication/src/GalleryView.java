@@ -1,5 +1,7 @@
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 import javax.swing.JTextField;
@@ -12,6 +14,7 @@ public class GalleryView extends JFrame
 {
 	Image image;
 	ImageInformation info;
+	ImageStorage storage;
 	// 
 	JFrame mainWindow;
 	JPanel functionPanel;
@@ -60,7 +63,14 @@ public class GalleryView extends JFrame
 		// Initialize the search and upload buttons
 		search = new JButton("search");
 		upload = new JButton("upload");
-		upload.addActionListener(new UploadButtonListener());
+		upload.addActionListener(new ActionListener()
+		{
+			@Override
+			public void actionPerformed(ActionEvent e)
+			{
+				System.out.println("file uploaded");
+			}
+		});
 		
 		// Initialize the panel for information
 		infoPanel = new JPanel();
@@ -110,7 +120,8 @@ public class GalleryView extends JFrame
 		//System.out.println(timeAdded);
 		//System.out.println(description);
 		
-
+		ImageStorage storage = new ImageStorage(name, image);
+		
 
 		
 		new GalleryView();

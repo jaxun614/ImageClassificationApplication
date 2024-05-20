@@ -41,11 +41,55 @@
 //}
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ImageStorage 
 {
-    
+	
+	public ImageStorage(String fileName, Image image) 
+	{
+		try
+		{
+			File imageStorage = new File(fileName);
+			if(imageStorage.createNewFile())
+			{
+				System.out.println("File created: "+ imageStorage.getName());
+			}
+			else
+			{
+				System.out.println("File already exists");
+			}
+		} catch(IOException e)
+		{
+			System.out.println("An error occured");
+			e.printStackTrace();
+		}
+
+	}
+	
+	public void uploadImage(String fileName, Image image)
+	{
+		PrintWriter printWriter = null;
+		
+		try 
+		{
+			printWriter = new PrintWriter(new FileWriter(new File(fileName), true));
+			printWriter.println(image.getImgName());
+		}
+		catch(Exception e)
+		{
+			System.out.println("something went wrong");
+		}
+		finally
+		{
+			printWriter.close();
+		}
+	}
 }
+
 
