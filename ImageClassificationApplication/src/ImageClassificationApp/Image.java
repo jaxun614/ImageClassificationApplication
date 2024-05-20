@@ -1,3 +1,4 @@
+package ImageClassificationApp;
 import java.net.URL;
 import java.util.Scanner;
 

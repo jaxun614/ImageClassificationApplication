@@ -1,3 +1,4 @@
+package ImageClassificationApp;
 import javax.swing.JButton;
 
 public class ImageButton extends JButton
